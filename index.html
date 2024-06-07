@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="./src/assets/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desafío 1 - JavaScript</title>
-  <link rel="stylesheet" href="./src/assets/css/styles.css">
-</head>
+  <body>
+    <main>
+      <section>
+        <div class="card">
+          <div class="img-card"></div>
+          <h6>Laptop Gamer AMD</h6>
+          <p>Precio base: $<span class="initial-price">400.000</span></p>
+          <p>
+            Cantidad:
+            <span class="quantity">0</span>
+            <button id="increment-btn" onclick="updatePrice('in')">+</button>
+            <button id="decrement-btn" onclick="updatePrice('dc')">-</button>
+          </p>
+        </div>
+      </section>
+      <section class="total-section">
+        <p>Total a pagar: $<span class="total-price"></span></p>
+      </section>
+    </main>
 
-<body>
-
-  <section>
-    <div class="card">
-      <div class="img-card"></div>
-      <h6>Laptop Gamer AMD</h6>
-      <p>Precio base: $<span class="initial-price"></span> </p>
-
-      <p>Cantidad:
-        <span class="quantity">0</span>
-        <button id="increment-btn">+</button>
-        <button id="decrement-btn">-</button>
-      </p>
-    </div>
-
-    </div>
-  </section>
-
-  <div class="total-section">
-    <p>Total a pagar: $<span class="total-price"></span> </p>
-  </div>
-
-  <script src="src/assets/js/app.js">
-
-
-  </script>
-</body>
-
+    <script src="src/assets/js/app.js"></script>
+  </body>
 </html>
